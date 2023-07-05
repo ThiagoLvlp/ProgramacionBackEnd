@@ -63,11 +63,11 @@ class ProductManager {
 }
 const instance = new ProductManager();
 
-instance.addProduct('new', 'neww', '123', 'link', '97', '10');
-instance.addProduct('new2', 'neww2', '1233', 'link2', '9617', '12');
-instance.addProduct('new2', 'neww2', '1233', 'link2', '961x7', '12');
+instance.addProduct('Cuadro1', 'Cuadro De madera', '1500', 'link', '1', '100');
+instance.addProduct('Cuadro2', 'Cuadro De madera y vidrio', '2500', 'link2', '2', '130');
+instance.addProduct('Cuadro3', 'Cuadro De madera sin vidrio', '2000', 'link3', '3', '150');
 // error
-instance.addProduct('new2', 'neww2', '1233', 'link2', '961x7', '12');
+instance.addProduct('Cuadro3', 'Cuadro De madera sin vidrio', '2000', 'link3', '3', '150');
 
 console.log(instance.getProductById(2));
 console.log(instance.getProducts());
